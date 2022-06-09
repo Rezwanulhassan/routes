@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import{BrowserRouter as Router,switch,Route} from "react-router-dom";
+import{BrowserRouter as Route,switch,Route} from "react-router-dom";
 import routes from "./routes";
 
 function App() {
@@ -9,12 +9,12 @@ function App() {
      <router>
        <switch>
          {routes.map((route,index)=>(
-           <Route>
+           <Route
              key={index}
              path={route.path}
              exact
              render={(props) => <route.component{...props}/>}
-           </Route>
+           ></Route>
          ))}
        </switch>
      </router>
