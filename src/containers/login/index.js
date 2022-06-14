@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-class RegisterContainer extends Component {
+class loginContainer extends Component {
 
     render() {
         return (
            <div>
-               <h1>Register</h1>
+               <h1>login Demo</h1>
            </div> 
         );
     }
 }
 
-export default RegisterContainer;
+export default loginContainer;

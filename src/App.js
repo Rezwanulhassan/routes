@@ -1,13 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import{BrowserRouter as Route,switch,Route} from "react-router-dom";
-import routes from "./routes";
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+ import routes from "./routes";
+//import Test from './containers/Test'
 
 function App() {
   return (
     <div className="App">
-     <router>
-       <switch>
+     <Router>
+       <Switch>
          {routes.map((route,index)=>(
            <Route
              key={index}
@@ -16,8 +16,11 @@ function App() {
              render={(props) => <route.component{...props}/>}
            ></Route>
          ))}
-       </switch>
-     </router>
+         {/* <Route path="/test">
+            <Test />
+          </Route> */}
+       </Switch>
+     </Router>
     </div>
   );
 }

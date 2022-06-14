@@ -1,5 +1,5 @@
-import loginComponent from "../container/login ";
-import ContactsComponent from "../container/contacts ";
+import loginComponent from "../containers/login";
+import ContactsComponent from "../containers/Contacts/contacts";
 import RegisterComponent from "../containers/Register";
 import CreateContactComponent from"../containers/CreateContact";
 
@@ -16,9 +16,9 @@ const routes=[
     title:"login",
 },
 {
-    path:"/",
+    path:"/contact",
     component:ContactsComponent,
-    title:"contacts",
+    title:"contacts title",
 },
 {
     path:"/contacts/create",
